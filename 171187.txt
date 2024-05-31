@@ -1,0 +1,72 @@
+4. Креирање на локален репозиториум: 
+mkdir SI_2024_lab1_171187
+cd SI_2024_lab1_171187
+git init
+5. Поврзување на локален репозиториум со remote репозиториум:
+git remote add origin https://github.com/nedelkovachristina/SI_2024_lab1_171187.git
+6. Додавање на README.md со име, презиме и индекс:
+echo #Kristina Nedelkova 171187 >> README.md
+git add README.md
+git commit -m "Initial commit"
+7. Додавање на 3те преземени фајлови во локален репозиториум, правење комит:
+git add .
+git commit -m "Add starter code"
+8. Синхронизирање со remote репозиториум:
+git push origin master
+9. Отворање 2 гранки разгранети од master:
+git branch bug1
+git checkout master
+git branch bug2
+10. Префрлање на гранката bug1:
+git checkout bug1
+11. После поправање на грешката во SILab1_1 се прави commit:
+git add SILab1_1.java
+git commit -m "Fix wrong condition in filterOddLengthStrings"
+12. Префрлање на гранката bug2:
+git checkout bug2
+13. После поправање на грешката во SILab1_2 се прави commit:
+git add SILab1_2.java
+git commit -m "Fix wrong condition in makeBigStringFrom"
+14. Се враќаме на гранката bug1:
+git checkout bug1
+15. После додавање во SILab1Main линија код, се прави commit:
+git add SILab1Main.java
+git commit -m "Call method filterOddLengthStrings in main class"
+16. Се враќаме на гранката bug2:
+git checkout bug2
+17. После додавање во SILab1Main линија код, се прави commit:
+git add SILab1Main.java
+git commit -m "Call method makeBigStringFrom in main class"
+18. Синхронизирање на сите гранки со оддалечен репозиториум:
+git push origin --all
+19. Префрлање на мастер:
+git checkout master
+20. Спојување на bug1 кон master:
+git merge bug1
+21. Синхронизирање на сите гранки со оддалечен репозиториум:
+git push origin --all
+22. Префрлање на bug2:
+git checkout bug2
+23. Правење rebase спрема master:
+git fetch
+git rebase master
+24. Префрлање на master:
+git checkout master
+25. Спојување на master со bug2:
+git merge bug2
+26. Синхронизирање на сите гранки со оддалечен репозиториум:
+git push origin --all
+27. Употреба на --force за bug2:
+git push --force origin bug2
+28. Креирање logs.txt:
+notepad logs.txt
+git log (ги копирам)
+git add 171187.txt
+git commit -m "Final commit"
+29. Синхронизирање на сите гранки со оддалечен репозиториум:
+git push origin --all
+
+
+
+
+
