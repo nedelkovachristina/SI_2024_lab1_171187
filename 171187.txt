@@ -50,6 +50,7 @@ git checkout bug2
 23. Правење rebase спрема master:
 git fetch
 git rebase master
+git rebase --continue
 24. Префрлање на master:
 git checkout master
 25. Спојување на master со bug2:
